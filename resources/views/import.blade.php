@@ -79,14 +79,12 @@
                 </table>
             </div>
             @if ($customers->hasPages())
-            <div class="pagination">
-
-                {{ $customers->links() }}
-
-            </div>
+                <div class="pagination">
+                    {{ $customers->links() }}
+                </div>
+            @endif
             <a href="{{route('customer.excel')}}" class="btn btn-success">Export Excel</a>
             <a href="{{route('customer.csv')}}" class="btn btn-success">Export CSV</a>
-        @endif
         </div>
     </div>
 </div>
